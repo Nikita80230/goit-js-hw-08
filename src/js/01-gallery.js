@@ -21,7 +21,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 const gallery = document.querySelector(".gallery");
-gallery.addEventListener("click", getLargeImage);
+// gallery.addEventListener("click", getLargeImage);
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -42,18 +42,11 @@ const markup = galleryItems.forEach(({preview, original, description}) => {
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-function getLargeImage(event) {
-    event.preventDefault();
-
-    if(event.target.nodeName === "IMG") {
         var lightbox = new SimpleLightbox('.gallery a', 
         {     
             captionsData: "alt",
             captionsDelay: "250ms"
         });
-    }
-
-}
 
 
 
